@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Clean Lineup – SoCal surf water quality & water temp today{% endblock %}</title>
+<meta name="description" content="{% block description %}Is the water clean? Live SoCal beach water-quality status, latest bacteria grades, NOAA water temps and what wetsuit to wear for {{ data.spot_count }} surf spots from Santa Barbara to Imperial Beach.{% endblock %}">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ canonical }}">
+<meta name="theme-color" content="#0b6e8a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+<link rel="stylesheet" href="{{ base }}/static/style.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="{{ base }}/"><span class="wave" aria-hidden="true">〰</span> Clean Lineup</a>
+  <nav><a href="{{ base }}/">Spots</a><a href="{{ base }}/about/">About &amp; sources</a></nav>
+</header>
+{% for county, r in rain %}
+<div class="rain-banner" role="alert">
+  <strong>☔ Rain in {{ county }}:</strong> {{ '%.2f'|format(r.inches_72h) }}″ in the last 72 h at {{ r.station }}.
+  Health officials advise staying out of the ocean for 72 h after rain{% if r.hours_remaining %} — about <strong>{{ r.hours_remaining }} h</strong> to go{% endif %}.
+</div>
+{% endfor %}
+<main>
+{% block main %}{% endblock %}
+</main>
+<footer class="foot">
+  <p>Data refreshed {{ generated|pt }}. Statuses come from county health agencies; temps from NOAA; rain from NWS. <strong>Not official health advice</strong> — always obey posted signs. <a href="{{ base }}/about/">Sources &amp; method</a>.</p>
+  <p>© Clean Lineup</p>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

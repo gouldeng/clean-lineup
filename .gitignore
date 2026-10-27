@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+site/
+*.pyc
+.env
+.env.*
+*.log
+*.cookies
+cookies*.txt
+node_modules/
+.DS_Store

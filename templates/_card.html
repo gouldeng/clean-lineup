@@ -1,0 +1,14 @@
+<li class="card st-{{ s.status }}" data-county="{{ s.county }}" data-status="{{ s.status }}" data-name="{{ s.name|lower }}">
+  <a href="{{ base }}/spots/{{ s.slug }}/">
+    <div class="card-head">
+      <h3>{{ s.name }}</h3>
+      <span class="pill st-{{ s.status }}">{{ s.status|status_label }}</span>
+    </div>
+    <div class="card-meta">
+      <span class="temp">{% if s.water_temp_f is not none %}{{ '%.0f'|format(s.water_temp_f) }}°F{% else %}— °F{% endif %}</span>
+      <span class="wear">{{ s.wear or 'No recent temp' }}</span>
+      {% if s.grade and s.grade.dry and s.grade.dry != 'ns' %}<span class="grade">Grade {{ s.grade.dry }}</span>{% endif %}
+      {% if s.rain_flag %}<span class="rainy">☔ recent rain</span>{% endif %}
+    </div>
+  </a>
+</li>

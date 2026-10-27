@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block head %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"WebSite","name":"Clean Lineup","url":site_url ~ "/","description":"SoCal surf spot water quality, water temperature and wetsuit guide."}|tojson }}</script>
+{% endblock %}
+{% block main %}
+<section class="hero">
+  <h1>Is the lineup clean today?</h1>
+  <p>Water-quality status, latest bacteria grade, NOAA water temp and what to wear for <strong>{{ data.spot_count }}</strong> Southern California surf spots.</p>
+  <p class="updated">Last updated <time datetime="{{ generated }}">{{ generated|pt }}</time></p>
+  <ul class="tally">
+    {% for k in ['open','advisory','closed','unknown'] %}<li class="pill st-{{ k }}">{{ data.status_counts.get(k, 0) }} {{ k|status_label }}</li>{% endfor %}
+  </ul>
+</section>
+
+<section class="filters" aria-label="Filter spots">
+  <input id="q" type="search" placeholder="Search spots…" aria-label="Search spots">
+  <div class="chips" id="county-chips">
+    <button class="chip on" data-county="">All counties</button>
+    {% for c, ss in by_county %}<button class="chip" data-county="{{ c }}">{{ c }}</button>{% endfor %}
+  </div>
+  <div class="chips" id="status-chips">
+    <button class="chip on" data-status="">Any status</button>
+    {% for k in ['open','advisory','closed','unknown'] %}<button class="chip sdot st-{{ k }}" data-status="{{ k }}">{{ k|status_label }}</button>{% endfor %}
+  </div>
+</section>
+
+{% for c, ss in by_county %}
+<section class="county" data-county="{{ c }}">
+  <h2>{{ c }} County <small>{{ ss|length }} spots</small></h2>
+  <ul class="cards">{% for s in ss %}{% include "_card.html" %}{% endfor %}</ul>
+</section>
+{% endfor %}
+<p id="none" hidden class="none">No spots match those filters.</p>
+
+<section class="promo-grid">
+  {% include "_newsletter.html" %}
+  {% include "_affiliate.html" %}
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ base }}/static/app.js" defer></script>{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}{{ s.name }} water quality & water temp today | Clean Lineup{% endblock %}
+{% block description %}{{ s.name }} ({{ s.county }} County): {% if s.status == 'unknown' %}no recent official water-quality status{% else %}water quality {{ s.status|status_label|lower }}{% endif %}{% if s.water_temp_f is not none %}, water temp {{ '%.0f'|format(s.water_temp_f) }}°F — {{ s.wear|lower }}{% endif %}. Updated {{ generated|pt }}.{% endblock %}
+{% block head %}
+<meta name="geo.position" content="{{ s.lat }};{{ s.lon }}">
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "Beach", "@id": canonical ~ "#beach", "name": s.name,
+     "geo": {"@type": "GeoCoordinates", "latitude": s.lat, "longitude": s.lon},
+     "address": {"@type": "PostalAddress", "addressRegion": "CA", "addressCountry": "US"},
+     "containedInPlace": {"@type": "AdministrativeArea", "name": s.county ~ " County, California"}},
+    {"@type": "WebPage", "@id": canonical, "url": canonical,
+     "name": s.name ~ " water quality & water temp today | Clean Lineup",
+     "dateModified": generated, "about": {"@id": canonical ~ "#beach"},
+     "isPartOf": {"@type": "WebSite", "name": "Clean Lineup", "url": site_url ~ "/"}},
+    {"@type": "BreadcrumbList", "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Spots", "item": site_url ~ "/"},
+      {"@type": "ListItem", "position": 2, "name": s.name, "item": canonical}]}
+  ]}|tojson }}</script>
+{% endblock %}
+{% block main %}
+<nav class="crumbs"><a href="{{ base }}/">All spots</a> › {{ s.county }} County</nav>
+<article class="spot">
+  <h1>{{ s.name }} <small>water quality &amp; water temp today</small></h1>
+  <div class="status-hero st-{{ s.status }}">
+    <span class="big">{{ s.status|status_label }}</span>
+    <p>{% if s.status_detail %}{{ s.status_detail }}{% elif s.status == 'unknown' %}No recent official status could be retrieved for this spot. Check the official source below before paddling out.{% endif %}</p>
+    <p class="src">Source: <a href="{{ s.source_url }}" rel="nofollow noopener">{{ s.source }}</a>{% if s.status_updated %} · updated {{ s.status_updated|pt }}{% endif %}</p>
+  </div>
+
+  <div class="facts">
+    <div class="fact">
+      <h2>Water temp</h2>
+      {% if s.water_temp_f is not none %}
+      <p class="num">{{ '%.1f'|format(s.water_temp_f) }}°F</p>
+      <p class="small">{{ s.temp_source }}, {{ '%.0f'|format(s.temp_distance_km) }} km away · {{ s.temp_time|pt }}</p>
+      {% else %}<p class="num">—</p><p class="small">No recent data from nearby NOAA stations.</p>{% endif %}
+    </div>
+    <div class="fact">
+      <h2>What to wear</h2>
+      <p class="num wear">{{ s.wear or 'No recent data' }}</p>
+      <p class="small">≥72°F trunks · 66–71 spring/2mm · 62–65 3/2 · 58–61 4/3 · &lt;58 4/3–5/4 + booties</p>
+    </div>
+    <div class="fact">
+      <h2>Latest bacteria grade</h2>
+      {% if s.grade %}
+      <p class="num">{{ s.grade.dry if s.grade.dry and s.grade.dry != 'ns' else 'n/s' }}<span class="small"> dry</span> · {{ s.grade.wet if s.grade.wet and s.grade.wet != 'ns' else 'n/s' }}<span class="small"> wet</span></p>
+      <p class="small">{{ s.grade.site }} · Heal the Bay Beach Report Card · {{ s.grade.updated|ptdate }} (n/s = not sampled)</p>
+      {% else %}<p class="num">—</p><p class="small">No recent grade for a nearby sampling site.</p>{% endif %}
+    </div>
+    <div class="fact">
+      <h2>Rain (72 h)</h2>
+      {% if s.rain %}
+      <p class="num">{{ '%.2f'|format(s.rain.inches_72h) }}″</p>
+      <p class="small">NWS {{ s.rain.station }}{% if s.rain_flag %} · rain advisory window: ~{{ s.rain.hours_remaining }} h left{% else %} · below the 0.1″ advisory threshold{% endif %}</p>
+      {% else %}<p class="num">—</p><p class="small">No recent data from NWS.</p>{% endif %}
+    </div>
+  </div>
+
+  {% if s.stations %}
+  <h2>Official monitoring stations</h2>
+  <ul class="stations">{% for st in s.stations %}<li><span class="dot st-{{ st.status }}"></span>{{ st.name }} — {{ st.label }}</li>{% endfor %}</ul>
+  {% endif %}
+
+  <h2>About {{ s.name }}</h2>
+  <p class="evergreen">{{ s.name }} is {{ s.blurb }} in {{ s.county }} County. Like most Southern California breaks, its water quality is driven mostly by runoff: after rain, storm drains, creeks and river mouths flush bacteria into the surf zone, and county health officers advise staying out of the ocean for at least 72 hours. During dry weather, water near creek mouths, piers and enclosed beaches still tends to grade worse than open coastline. County agencies sample weekly (more often in summer) and post advisories when bacteria exceed state standards, or close beaches after sewage spills. Ocean temperatures here typically run from the high 50s°F in spring upwelling to the low-to-mid 70s°F in late summer, so check the live reading above before choosing your rubber.</p>
+
+  {% include "_affiliate.html" %}
+
+  {% if nearby %}
+  <h2>Nearby spots</h2>
+  <ul class="cards">{% for s in nearby %}{% include "_card.html" %}{% endfor %}</ul>
+  {% endif %}
+</article>
+{% endblock %}

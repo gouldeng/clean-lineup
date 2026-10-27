@@ -9,3 +9,6 @@ site/
 cookies*.txt
 node_modules/
 .DS_Store
+
+# private working notes (not for the public repo)
+affiliate-applications.md

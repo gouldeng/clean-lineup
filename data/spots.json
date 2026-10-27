@@ -1,64 +1,65 @@
 {
- "generated": "2026-10-27T15:11:17Z",
+ "generated": "2026-10-27T15:13:22Z",
  "spot_count": 65,
  "status_counts": {
   "closed": 3,
   "advisory": 7,
-  "open": 37,
-  "unknown": 18
+  "open": 21,
+  "unknown": 34
  },
  "sources": {
   "sd_sdbeachinfo": {
    "ok": true,
-   "seconds": 8.8
+   "seconds": 8.9
   },
   "la_dph_map_kml": {
    "ok": true,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   "la_dph_page": {
    "ok": true,
-   "seconds": 5.4
+   "seconds": 0.3
   },
   "oc_ocbeachinfo": {
-   "ok": true,
+   "ok": false,
+   "error": "RuntimeError: ocbeachinfo.com returned a bot-protection challenge (not bypassed)",
    "seconds": 0.3
   },
   "vc_safebeaches_arcgis": {
    "ok": true,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   "sb_ocean_water_arcgis": {
    "ok": true,
-   "seconds": 0.5
+   "seconds": 0.4
   },
   "healthebay_grades": {
    "ok": true,
-   "seconds": 0.6
+   "seconds": 1.0
   },
   "ndbc_water_temp": {
    "ok": true,
-   "seconds": 9.0
+   "seconds": 9.5
   },
   "nws_rain_KLAX": {
    "ok": true,
-   "seconds": 2.0
+   "seconds": 1.1
   },
   "nws_rain_KSNA": {
    "ok": true,
-   "seconds": 1.7
+   "seconds": 1.0
   },
   "nws_rain_KSAN": {
    "ok": true,
-   "seconds": 1.8
+   "seconds": 0.9
   },
   "nws_rain_KOXR": {
    "ok": true,
-   "seconds": 1.9
+   "seconds": 1.0
   },
   "nws_rain_KSBA": {
    "ok": true,
-   "seconds": 1.7
+   "seconds": 0.9
   }
  },
  "county_notes": {
@@ -73,11 +74,7 @@
     "FFFFFF"
    ]
   },
-  "oc": {
-   "closures": "",
-   "warnings": "",
-   "advisories": ""
-  },
+  "oc": null,
   "vc": {
    "updated": "2026-10-26T16:38:32Z"
   },
@@ -1393,12 +1390,12 @@
    "lat": 33.7377,
    "lon": -118.1062,
    "blurb": "a beach break beside the Seal Beach pier, with a jetty-shaped wave at the river mouth",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1430,12 +1427,12 @@
    "lat": 33.7018,
    "lon": -118.0552,
    "blurb": "a long, mellow state beach that is a go-to for beginners and longboarders",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1467,12 +1464,12 @@
    "lat": 33.6756,
    "lon": -118.0285,
    "blurb": "soft, sand-bottom peaks below the bluffs at Dog Beach, a longboard favorite",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1504,12 +1501,12 @@
    "lat": 33.6559,
    "lon": -118.0026,
    "blurb": "Surf City's centerpiece: competitive peaks on both sides of the Huntington Beach Pier",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A",
     "wet": "A",
@@ -1541,12 +1538,12 @@
    "lat": 33.6382,
    "lon": -117.9755,
    "blurb": "a long run of beach-break peaks from Beach Boulevard toward the Santa Ana River",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A",
     "wet": "A+",
@@ -1578,12 +1575,12 @@
    "lat": 33.622,
    "lon": -117.9444,
    "blurb": "jetty-groomed beach-break wedges along West Newport's groins",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -1615,12 +1612,12 @@
    "lat": 33.5936,
    "lon": -117.8816,
    "blurb": "the world-famous bodysurf and bodyboard shorebreak at the Newport Harbor jetty",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -1652,12 +1649,12 @@
    "lat": 33.593,
    "lon": -117.8755,
    "blurb": "a family beach in the lee of the Newport jetty that only breaks on big south swells",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1689,12 +1686,12 @@
    "lat": 33.5783,
    "lon": -117.8491,
    "blurb": "a state park coastline of reefs and coves between Newport and Laguna",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1726,12 +1723,12 @@
    "lat": 33.5419,
    "lon": -117.7854,
    "blurb": "Laguna Beach's downtown beach, with reef-and-sand waves and good bodysurfing",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1763,12 +1760,12 @@
    "lat": 33.5295,
    "lon": -117.7738,
    "blurb": "a sand-bottom beach break in Laguna that is one of the town's most popular spots",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A",
     "wet": "ns",
@@ -1800,12 +1797,12 @@
    "lat": 33.4791,
    "lon": -117.7242,
    "blurb": "a powerful reef-and-sand break in Dana Point below the Monarch Beach headland",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1837,12 +1834,12 @@
    "lat": 33.4617,
    "lon": -117.6865,
    "blurb": "a gentle longboard and beginner wave next to Dana Point Harbor at San Juan Creek",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -1874,12 +1871,12 @@
    "lat": 33.4407,
    "lon": -117.6457,
    "blurb": "a fun beach break at the north end of San Clemente, near the Poche Creek outlet",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1911,12 +1908,12 @@
    "lat": 33.4193,
    "lon": -117.6205,
    "blurb": "peaky waves next to the San Clemente Municipal Pier",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1948,12 +1945,12 @@
    "lat": 33.4173,
    "lon": -117.6189,
    "blurb": "a reef-and-sand break south of the San Clemente Pier that handles a range of swells",
-   "status": "open",
-   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
+   "status": "unknown",
+   "status_detail": null,
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-10-27T15:11:17Z",
+   "status_updated": null,
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2048,11 +2045,11 @@
     "site": "Oceanside, San Luis Rey River outlet",
     "id": 268
    },
-   "water_temp_f": 73.6,
+   "water_temp_f": 73.8,
    "temp_source": "NOAA NDBC 46224 \u2013 Oceanside Offshore, CA (045)",
    "temp_station": "46224",
    "temp_distance_km": 7.8,
-   "temp_time": "2026-10-27T14:26:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2098,11 +2095,11 @@
     "site": "Oceanside, projection of Tyson St.",
     "id": 272
    },
-   "water_temp_f": 73.6,
+   "water_temp_f": 73.8,
    "temp_source": "NOAA NDBC 46224 \u2013 Oceanside Offshore, CA (045)",
    "temp_station": "46224",
    "temp_distance_km": 8.3,
-   "temp_time": "2026-10-27T14:26:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2140,7 +2137,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 9.7,
-   "temp_time": "2026-10-27T13:56:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2190,7 +2187,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 5.0,
-   "temp_time": "2026-10-27T13:56:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2234,7 +2231,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 2.1,
-   "temp_time": "2026-10-27T13:56:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2278,7 +2275,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 3.6,
-   "temp_time": "2026-10-27T13:56:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2328,7 +2325,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 4.4,
-   "temp_time": "2026-10-27T13:56:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2378,7 +2375,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 6.0,
-   "temp_time": "2026-10-27T13:56:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2428,7 +2425,7 @@
    "temp_source": "NOAA NDBC 46266 \u2013 Del Mar Nearshore, CA (153)",
    "temp_station": "46266",
    "temp_distance_km": 4.9,
-   "temp_time": "2026-10-27T14:26:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2478,7 +2475,7 @@
    "temp_source": "NOAA NDBC 46266 \u2013 Del Mar Nearshore, CA (153)",
    "temp_station": "46266",
    "temp_distance_km": 1.0,
-   "temp_time": "2026-10-27T14:26:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",
@@ -2522,7 +2519,7 @@
    "temp_source": "NOAA NDBC 46266 \u2013 Del Mar Nearshore, CA (153)",
    "temp_station": "46266",
    "temp_distance_km": 3.0,
-   "temp_time": "2026-10-27T14:26:00Z",
+   "temp_time": "2026-10-27T14:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "rain": {
     "station": "KSAN",

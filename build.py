@@ -12,7 +12,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "site"
-SITE_URL = (os.environ.get("SITE_URL") or "https://gouldeng.github.io/clean-lineup").rstrip("/")
+SITE_URL = (os.environ.get("SITE_URL") or "https://cleanlineup.com").rstrip("/")
 BASE = urlparse(SITE_URL).path.rstrip("/")  # e.g. "/clean-lineup" on GitHub Pages project sites
 PT = ZoneInfo("America/Los_Angeles")
 COUNTY_ORDER = ["Santa Barbara", "Ventura", "Los Angeles", "Orange", "San Diego"]
@@ -95,6 +95,9 @@ def main():
         + "</urlset>\n")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
     (OUT / ".nojekyll").write_text("")
+    host = urlparse(SITE_URL).hostname or ""
+    if host and not host.endswith("github.io"):
+        (OUT / "CNAME").write_text(host + "\n")  # GitHub Pages custom domain
     print(f"built {len(urls)} pages into {OUT}")
 
 

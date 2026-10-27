@@ -15,7 +15,7 @@ fetch.py  ──►  data/spots.json  ──►  build.py  ──►  site/   (p
   - `/spots/<slug>/` pages
   - `/about/`
   - `sitemap.xml` and `robots.txt`
-- `.github/workflows/update.yml` runs both scripts on every push to `main`, on manual dispatch and every 3 hours, commits the new data, and deploys `site/` to GitHub Pages (https://gouldeng.github.io/clean-lineup/).
+- `.github/workflows/update.yml` runs both scripts on every push to `main`, on manual dispatch and every 3 hours, commits the new data, and deploys `site/` to GitHub Pages at https://cleanlineup.com (custom domain; `build.py` writes `site/CNAME`).
 
 ## Sources
 
@@ -39,7 +39,7 @@ python -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python -m playwright install chromium     # or set CHROME_PATH=/path/to/chrome
 python fetch.py                           # ~1 min; writes data/spots.json
-SITE_URL=https://gouldeng.github.io/clean-lineup python build.py   # the URL path becomes the link base
+SITE_URL=https://cleanlineup.com python build.py   # the URL path becomes the link base
 cd site && python -m http.server 8000
 ```
 
@@ -55,7 +55,7 @@ cd site && python -m http.server 8000
 
 ## TODO
 
-- Hosting: GitHub Pages project site. For a custom domain later, set `SITE_URL` in the workflow to the root domain (the link base becomes `/`).
+- Hosting: GitHub Pages with custom domain cleanlineup.com (DNS at Porkbun).
 - The `UA` string in `fetch.py` identifies the bot with the repo URL.
 - Ask Heal the Bay about API use. Confirm whether ocbeachinfo.com allows automated reads, or ask OCHCA for a feed.
 - Newsletter form: connect it to a provider. It is marked TODO and collects nothing.

@@ -18,7 +18,7 @@
 <body>
 <header class="top">
   <a class="brand" href="{{ base }}/"><span class="wave" aria-hidden="true">〰</span> Clean Lineup</a>
-  <nav><a href="{{ base }}/">Spots</a><a href="{{ base }}/about/">About &amp; sources</a></nav>
+  <nav><a href="{{ base }}/">Spots</a><a href="{{ base }}/about/">About &amp; sources</a><a href="https://buttondown.com/cleanlineup">Newsletter</a></nav>
 </header>
 {% for county, r in rain %}
 <div class="rain-banner" role="alert">
@@ -31,7 +31,7 @@
 </main>
 <footer class="foot">
   <p>Data refreshed {{ generated|pt }}. Statuses come from county health agencies; temps from NOAA; rain from NWS. <strong>Not official health advice</strong> — always obey posted signs. <a href="{{ base }}/about/">Sources &amp; method</a>.</p>
-  <p>© Clean Lineup</p>
+  <p><a href="https://buttondown.com/cleanlineup">Newsletter</a> · © Clean Lineup</p>
 </footer>
 {% block scripts %}{% endblock %}
 </body>

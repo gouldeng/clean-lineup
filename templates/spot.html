@@ -72,5 +72,7 @@
   <h2>Nearby spots</h2>
   <ul class="cards">{% for s in nearby %}{% include "_card.html" %}{% endfor %}</ul>
   {% endif %}
+
+  {% with nl_id="spot" %}{% include "_newsletter.html" %}{% endwith %}
 </article>
 {% endblock %}

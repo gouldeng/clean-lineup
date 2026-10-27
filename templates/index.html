@@ -12,6 +12,8 @@
   </ul>
 </section>
 
+{% with nl_compact=true, nl_id="top" %}{% include "_newsletter.html" %}{% endwith %}
+
 <section class="filters" aria-label="Filter spots">
   <input id="q" type="search" placeholder="Search spots…" aria-label="Search spots">
   <div class="chips" id="county-chips">
@@ -32,9 +34,6 @@
 {% endfor %}
 <p id="none" hidden class="none">No spots match those filters.</p>
 
-<section class="promo-grid">
-  {% include "_newsletter.html" %}
-  {% include "_affiliate.html" %}
-</section>
+<div class="promo">{% include "_affiliate.html" %}</div>
 {% endblock %}
 {% block scripts %}<script src="{{ base }}/static/app.js" defer></script>{% endblock %}

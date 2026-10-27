@@ -53,12 +53,15 @@ cd site && python -m http.server 8000
 | 58–61°F | 4/3 |
 | <58°F | 4/3 or 5/4 plus booties |
 
+## Newsletter
+
+Signup forms (home page, every spot page) post to Buttondown's embed endpoint for the `cleanlineup` account and open the confirm page in a new tab. Archive: https://buttondown.com/cleanlineup
+
 ## TODO
 
 - Hosting: GitHub Pages with custom domain cleanlineup.com (DNS at Porkbun).
 - The `UA` string in `fetch.py` identifies the bot with the repo URL.
 - Ask Heal the Bay about API use. Confirm whether ocbeachinfo.com allows automated reads, or ask OCHCA for a feed.
-- Newsletter form: connect it to a provider. It is marked TODO and collects nothing.
 - Wetsuit affiliate box: add links once you are in a program. It is marked TODO and has no links.
 - LA: the DPH map KML publishes no legend and is currently all white (results pending after the Oct 21–26 rain advisory). Confirm the colour legend with DPH, then fill `LA_COLOR_STATUS` in `fetch.py`. The DPH advisory page is HTTP-only and may not be reachable from every network.
 - Rejected sources (checked Oct 2026): the data.ca.gov "Beach water quality postings and closures" dataset is about 7 months behind; State Water Board BeachWatch postings lag 1–2 weeks and leave stale open-ended postings, so neither is used for current status.

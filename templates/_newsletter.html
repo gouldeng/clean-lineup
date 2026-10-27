@@ -1,11 +1,13 @@
-<!-- TODO(newsletter): wire this form to the chosen provider (e.g. Buttondown or Kit) once an account exists. Intentionally has no action. -->
-<div class="box newsletter">
-  <h2>Clean-water alerts</h2>
-  <p>Get a heads-up when your break goes on advisory or a rain advisory lifts. <em>Coming soon.</em></p>
-  <form onsubmit="return false" aria-disabled="true">
-    <label class="sr" for="nl-email">Email</label>
-    <input id="nl-email" type="email" placeholder="you@example.com" disabled>
-    <button type="submit" disabled>Notify me</button>
+{# Buttondown embed form (account: cleanlineup). Opens Buttondown's confirm page in a new tab. #}
+<section class="box newsletter{% if nl_compact %} compact{% endif %}" aria-labelledby="nl-h-{{ nl_id }}">
+  <div class="nl-copy">
+    <h2 id="nl-h-{{ nl_id }}">Get the weekend lineup</h2>
+    <p>Free Thursday email: which SoCal spots are clean, water temps, what wetsuit to wear, and rain alerts after storms.</p>
+  </div>
+  <form action="https://buttondown.com/api/emails/embed-subscribe/cleanlineup" method="post" target="_blank" class="nl-form">
+    <label class="sr" for="nl-email-{{ nl_id }}">Email address</label>
+    <input id="nl-email-{{ nl_id }}" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+    <button type="submit">Subscribe</button>
   </form>
-  <p class="todo">TODO: newsletter not connected yet — nothing is collected.</p>
-</div>
+  <p class="nl-fine">No spam, unsubscribe anytime. <a href="https://buttondown.com/refer/cleanlineup" target="_blank" rel="noopener">Powered by Buttondown</a></p>
+</section>

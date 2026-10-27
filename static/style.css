@@ -29,11 +29,20 @@ main{max-width:960px;margin:0 auto;padding:1rem}
 .card-meta{display:flex;flex-wrap:wrap;gap:.25rem .8rem;font-size:.85rem;color:var(--muted);margin-top:.3rem}
 .temp{font-weight:800;color:var(--ocean)}.rainy{color:#2b5d9b;font-weight:700}
 .none{text-align:center;color:var(--muted)}
-.promo-grid{display:grid;gap:1rem;margin:2rem 0}@media(min-width:640px){.promo-grid{grid-template-columns:1fr 1fr}}
+.promo{margin:2rem 0}.promo-grid{display:grid;gap:1rem;margin:2rem 0}@media(min-width:640px){.promo{margin:2rem 0}.promo-grid{grid-template-columns:1fr 1fr}}
 .box{background:var(--foam);border-radius:var(--r);padding:1rem 1.1rem;border:1px dashed #cdbfa7}
 .box h2{margin:.1rem 0 .4rem;font-size:1.1rem}
-.newsletter form{display:flex;gap:.4rem}.newsletter input{flex:1;padding:.5rem;border:1px solid #d9cdb8;border-radius:10px}
-.newsletter button{padding:.5rem .9rem;border:0;border-radius:10px;background:var(--ocean);color:#fff;opacity:.6}
+.newsletter{border-style:solid;border-color:#d9cdb8;margin:1.2rem 0}
+.newsletter p{margin:.2rem 0 .6rem;color:var(--muted)}
+.nl-form{display:flex;gap:.4rem;flex-wrap:wrap}
+.nl-form input{flex:1 1 14rem;min-width:0;padding:.6rem .7rem;font:inherit;border:1px solid #cdbfa7;border-radius:10px;background:#fff;color:var(--ink)}
+.nl-form input:focus-visible,.nl-form button:focus-visible{outline:3px solid #7cc4d8;outline-offset:1px}
+.nl-form button{flex:0 0 auto;padding:.6rem 1.1rem;font:inherit;font-weight:700;border:0;border-radius:10px;background:var(--ocean);color:#fff;cursor:pointer}
+.nl-form button:hover{background:var(--deep)}
+.newsletter .nl-fine{font-size:.78rem;margin:.5rem 0 0}.nl-fine a{color:var(--muted)}
+.newsletter.compact{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1rem;padding:.8rem 1rem;margin:.8rem 0}
+.newsletter.compact .nl-copy{flex:1 1 18rem}.newsletter.compact h2{font-size:1rem;margin:0}.newsletter.compact .nl-copy p{margin:.15rem 0 0;font-size:.88rem}
+.newsletter.compact .nl-form{flex:1 1 20rem}.newsletter.compact .nl-fine{flex-basis:100%;margin:0}
 .todo{font-size:.78rem;color:#9a6b00;margin:.5rem 0 0}
 .crumbs{font-size:.85rem;color:var(--muted);margin:.4rem 0}
 .spot h1{font-size:1.6rem;margin:.3rem 0 .8rem;line-height:1.2}.spot h1 small{display:block;font-size:.95rem;color:var(--muted);font-weight:500}

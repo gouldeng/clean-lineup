@@ -30,7 +30,12 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       # San Diego's sdbeachinfo.com is a JS app; fetch.py reads it with headless Chromium.
-      - run: python -m playwright install --with-deps chromium
+      # Capped so a slow apt mirror can't stall the job; if it fails or times out, the
+      # rest of the fetch still runs and San Diego shows "no recent data" (no guessing).
+      - name: Install headless Chromium
+        run: python -m playwright install --with-deps chromium
+        timeout-minutes: 5
+        continue-on-error: true
       - name: Fetch sources
         run: python fetch.py
       - name: Build site

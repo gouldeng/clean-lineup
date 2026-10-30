@@ -1,28 +1,27 @@
 {
- "generated": "2026-10-30T17:07:00Z",
+ "generated": "2026-10-30T17:09:02Z",
  "spot_count": 65,
  "status_counts": {
   "closed": 2,
-  "advisory": 8,
-  "open": 21,
-  "unknown": 34
+  "advisory": 11,
+  "open": 34,
+  "unknown": 18
  },
  "sources": {
   "sd_sdbeachinfo": {
    "ok": true,
-   "seconds": 12.3
+   "seconds": 12.4
   },
   "la_dph_map_kml": {
    "ok": true,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   "la_dph_page": {
    "ok": true,
-   "seconds": 0.5
+   "seconds": 0.3
   },
   "oc_ocbeachinfo": {
-   "ok": false,
-   "error": "RuntimeError: ocbeachinfo.com returned a bot-protection challenge (not bypassed)",
+   "ok": true,
    "seconds": 0.3
   },
   "vc_safebeaches_arcgis": {
@@ -31,19 +30,19 @@
   },
   "sb_ocean_water_arcgis": {
    "ok": true,
-   "seconds": 0.6
+   "seconds": 0.3
   },
   "healthebay_grades": {
    "ok": true,
-   "seconds": 0.4
+   "seconds": 0.6
   },
   "ndbc_water_temp": {
    "ok": true,
-   "seconds": 8.2
+   "seconds": 11.0
   },
   "nws_rain_KLAX": {
    "ok": true,
-   "seconds": 0.8
+   "seconds": 0.9
   },
   "nws_rain_KSNA": {
    "ok": true,
@@ -55,11 +54,11 @@
   },
   "nws_rain_KOXR": {
    "ok": true,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   "nws_rain_KSBA": {
    "ok": true,
-   "seconds": 0.8
+   "seconds": 0.7
   }
  },
  "county_notes": {
@@ -76,7 +75,11 @@
     "FFFFFF"
    ]
   },
-  "oc": null,
+  "oc": {
+   "closures": "",
+   "warnings": "Seal Beach \u2013 From 150 feet upcoast to 150 feet downcoast of 14th Street (posted on 10/28/2026) Dana Point \u2013 From 150 feet upcoast to 150 feet downcoast of the last campground at Doheny State Beach (posted on 10/29/2026)",
+   "advisories": ""
+  },
   "vc": {
    "updated": "2026-10-29T23:30:46Z"
   },
@@ -904,7 +907,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 0.2,
-   "temp_time": "2026-10-30T16:18:00Z",
+   "temp_time": "2026-10-30T16:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -961,7 +964,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 2.9,
-   "temp_time": "2026-10-30T16:18:00Z",
+   "temp_time": "2026-10-30T16:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1006,7 +1009,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 4.4,
-   "temp_time": "2026-10-30T16:18:00Z",
+   "temp_time": "2026-10-30T16:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1057,7 +1060,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 8.8,
-   "temp_time": "2026-10-30T16:18:00Z",
+   "temp_time": "2026-10-30T16:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1102,7 +1105,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 13.8,
-   "temp_time": "2026-10-30T16:18:00Z",
+   "temp_time": "2026-10-30T16:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1153,7 +1156,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 14.8,
-   "temp_time": "2026-10-30T16:18:00Z",
+   "temp_time": "2026-10-30T16:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1198,7 +1201,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 17.3,
-   "temp_time": "2026-10-30T16:18:00Z",
+   "temp_time": "2026-10-30T16:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1255,7 +1258,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 21.3,
-   "temp_time": "2026-10-30T16:18:00Z",
+   "temp_time": "2026-10-30T16:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1417,12 +1420,12 @@
    "lat": 33.7377,
    "lon": -118.1062,
    "blurb": "a beach break beside the Seal Beach pier, with a jetty-shaped wave at the river mouth",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Posting listed near Seal Beach",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1455,12 +1458,12 @@
    "lat": 33.7018,
    "lon": -118.0552,
    "blurb": "a long, mellow state beach that is a go-to for beginners and longboarders",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1493,12 +1496,12 @@
    "lat": 33.6756,
    "lon": -118.0285,
    "blurb": "soft, sand-bottom peaks below the bluffs at Dog Beach, a longboard favorite",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1531,12 +1534,12 @@
    "lat": 33.6559,
    "lon": -118.0026,
    "blurb": "Surf City's centerpiece: competitive peaks on both sides of the Huntington Beach Pier",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A",
     "wet": "A",
@@ -1569,12 +1572,12 @@
    "lat": 33.6382,
    "lon": -117.9755,
    "blurb": "a long run of beach-break peaks from Beach Boulevard toward the Santa Ana River",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A",
     "wet": "A+",
@@ -1607,12 +1610,12 @@
    "lat": 33.622,
    "lon": -117.9444,
    "blurb": "jetty-groomed beach-break wedges along West Newport's groins",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -1645,12 +1648,12 @@
    "lat": 33.5936,
    "lon": -117.8816,
    "blurb": "the world-famous bodysurf and bodyboard shorebreak at the Newport Harbor jetty",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -1683,12 +1686,12 @@
    "lat": 33.593,
    "lon": -117.8755,
    "blurb": "a family beach in the lee of the Newport jetty that only breaks on big south swells",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1721,12 +1724,12 @@
    "lat": 33.5783,
    "lon": -117.8491,
    "blurb": "a state park coastline of reefs and coves between Newport and Laguna",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1759,12 +1762,12 @@
    "lat": 33.5419,
    "lon": -117.7854,
    "blurb": "Laguna Beach's downtown beach, with reef-and-sand waves and good bodysurfing",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1797,12 +1800,12 @@
    "lat": 33.5295,
    "lon": -117.7738,
    "blurb": "a sand-bottom beach break in Laguna that is one of the town's most popular spots",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A",
     "wet": "ns",
@@ -1835,12 +1838,12 @@
    "lat": 33.4791,
    "lon": -117.7242,
    "blurb": "a powerful reef-and-sand break in Dana Point below the Monarch Beach headland",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Posting listed near Dana Point",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1873,12 +1876,12 @@
    "lat": 33.4617,
    "lon": -117.6865,
    "blurb": "a gentle longboard and beginner wave next to Dana Point Harbor at San Juan Creek",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Posting listed near Dana Point, Doheny",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -1911,12 +1914,12 @@
    "lat": 33.4407,
    "lon": -117.6457,
    "blurb": "a fun beach break at the north end of San Clemente, near the Poche Creek outlet",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1949,12 +1952,12 @@
    "lat": 33.4193,
    "lon": -117.6205,
    "blurb": "peaky waves next to the San Clemente Municipal Pier",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1987,12 +1990,12 @@
    "lat": 33.4173,
    "lon": -117.6189,
    "blurb": "a reef-and-sand break south of the San Clemente Pier that handles a range of swells",
-   "status": "unknown",
-   "status_detail": null,
+   "status": "open",
+   "status_detail": "No closures, warnings or advisories listed by OC Health Care Agency for this area",
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": null,
+   "status_updated": "2026-10-30T17:09:02Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",

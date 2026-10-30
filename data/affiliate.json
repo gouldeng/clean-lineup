@@ -1,0 +1,24 @@
+{
+  "program": "Patagonia via Impact",
+  "disclosure": "Clean Lineup earns a commission if you buy through these links.",
+  "rel": "sponsored nofollow noopener",
+  "links": {
+    "home": {"label": "Patagonia", "url": "https://patagonia.pxf.io/4a0Y03"},
+    "mens": {"label": "All men's wetsuits", "url": "https://patagonia.pxf.io/YVPxPr"},
+    "womens": {"label": "All women's wetsuits", "url": "https://patagonia.pxf.io/MKz1qn"}
+  },
+  "products": {
+    "lite_spring": {"name": "Men's Yulex Regulator Lite Front-Zip Spring Suit", "url": "https://patagonia.pxf.io/AgeDON"},
+    "r1_full_fz": {"name": "Men's R1 Yulex Regulator Front-Zip Full Wetsuit", "url": "https://patagonia.pxf.io/9VD36j"},
+    "r2_full_bz": {"name": "Men's R2 Yulex Regulator Back-Zip Full Wetsuit", "url": "https://patagonia.pxf.io/1GB3Yx"},
+    "r2_hooded_fz": {"name": "Men's R2 Yulex Regulator Front-Zip Hooded Full Wetsuit", "url": "https://patagonia.pxf.io/enXG0X"},
+    "r3_hooded_fz": {"name": "Men's R3 Yulex Regulator Front-Zip Hooded Full Wetsuit", "url": "https://patagonia.pxf.io/aNVkoo"}
+  },
+  "bands": {
+    "boardshorts": {"picks": [], "note": "No wetsuit needed at this temp. If you run cold or surf at dawn, browse the wetsuit lineup."},
+    "spring_2mm": {"picks": ["lite_spring", "r1_full_fz"], "note": "Spring suit for warm afternoons; R1 fullsuit for dawn patrol or windy days."},
+    "full_3_2": {"picks": ["r1_full_fz", "r2_full_bz"], "note": "R1 is Patagonia's 3/2-class fullsuit; R2 if you run cold."},
+    "full_4_3": {"picks": ["r2_full_bz", "r3_hooded_fz"], "note": "R2 is the 4/3-class fullsuit; R3 hooded for long sessions."},
+    "cold_5_4": {"picks": ["r3_hooded_fz", "r2_hooded_fz"], "note": "R3 hooded is the warmest pick; add booties."}
+  }
+}

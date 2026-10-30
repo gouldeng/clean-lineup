@@ -60,11 +60,17 @@ def main():
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html", "xml"]))
     env.filters.update(pt=pt, ptdate=ptdate, ago=lambda s: ago(s, now), status_label=STATUS_LABEL.get)
     spots = data["spots"]
+    # Older spots.json files predate wear_key; derive it from the wear label so the build never breaks.
+    label_key = {"Boardshorts or a bikini/top": "boardshorts", "Springsuit or 2mm": "spring_2mm",
+                 "3/2 fullsuit": "full_3_2", "4/3 fullsuit": "full_4_3", "4/3 or 5/4 plus booties": "cold_5_4"}
+    for sp in spots:
+        sp.setdefault("wear_key", label_key.get(sp.get("wear")))
+    shop = json.loads((ROOT / "data" / "affiliate.json").read_text())
     by_county = [(c, [s for s in spots if s["county"] == c]) for c in COUNTY_ORDER]
     by_county = [(c, ss) for c, ss in by_county if ss]
     rain = [(c, r) for c, r in data["county_notes"]["rain"].items() if r and r.get("rain_flag")]
     ctx = dict(data=data, spots=spots, by_county=by_county, rain=rain, site_url=SITE_URL, base=BASE,
-               generated=data["generated"], STATUS_LABEL=STATUS_LABEL)
+               generated=data["generated"], STATUS_LABEL=STATUS_LABEL, shop=shop)
 
     if OUT.exists():
         shutil.rmtree(OUT)

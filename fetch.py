@@ -342,17 +342,19 @@ def fetch_rain(station):
 
 # ---------------------------------------------------------------- helpers
 def wear(f):
+    """Return (label, wear_key) for a water temp in °F, or (None, None) with no reading.
+    wear_key matches the bands in data/affiliate.json."""
     if f is None:
-        return None
+        return None, None
     if f >= 72:
-        return "Boardshorts or a bikini/top"
+        return "Boardshorts or a bikini/top", "boardshorts"
     if f >= 66:
-        return "Springsuit or 2mm"
+        return "Springsuit or 2mm", "spring_2mm"
     if f >= 62:
-        return "3/2 fullsuit"
+        return "3/2 fullsuit", "full_3_2"
     if f >= 58:
-        return "4/3 fullsuit"
-    return "4/3 or 5/4 plus booties"
+        return "4/3 fullsuit", "full_4_3"
+    return "4/3 or 5/4 plus booties", "cold_5_4"
 
 
 def worst(statuses):
@@ -471,7 +473,7 @@ def main():
             rec["temp_time"] = t["time"]
         else:
             rec.update(water_temp_f=None, temp_source=None, temp_station=None, temp_distance_km=None, temp_time=None)
-        rec["wear"] = wear(rec["water_temp_f"])
+        rec["wear"], rec["wear_key"] = wear(rec["water_temp_f"])
         # ---- rain
         rn = rain.get(c)
         rec["rain"] = rn

@@ -59,3 +59,12 @@ main{max-width:960px;margin:0 auto;padding:1rem}
 .wear-table{border-collapse:collapse}.wear-table td,.wear-table th{padding:.3rem .8rem;border-bottom:1px solid #eee;text-align:left}
 .foot{max-width:960px;margin:2rem auto 0;padding:1rem;font-size:.82rem;color:var(--muted);border-top:1px solid #e6dccb}
 .sr{position:absolute;left:-9999px}
+
+.affiliate{border-style:solid;border-color:#d9cdb8}
+.affiliate p{margin:.2rem 0 .5rem}
+.picks{list-style:none;padding:0;margin:.4rem 0;display:grid;gap:.4rem}
+.picks li a{display:inline-block;padding:.45rem .7rem;border:1px solid #cdbfa7;border-radius:10px;background:#fff;font-weight:700;text-decoration:none}
+.picks li a:hover{border-color:var(--ocean)}
+.picks .tag{font-size:.72rem;font-weight:700;color:var(--deep);background:#dcefe9;border-radius:999px;padding:.1rem .45rem;margin-left:.3rem;vertical-align:middle}
+.affiliate .cats{font-size:.9rem}
+.affiliate .disclosure{font-size:.78rem;color:var(--muted);margin:.4rem 0 0}

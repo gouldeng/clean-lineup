@@ -1,6 +1,21 @@
-<!-- TODO(affiliate): add real wetsuit affiliate links after joining a program. No links on purpose. -->
-<div class="box affiliate">
-  <h2>Wetsuit picks</h2>
-  <p>{% if s is defined and s.wear %}Today's call here: <strong>{{ s.wear }}</strong>. {% endif %}Gear recommendations for each thickness are coming soon.</p>
-  <p class="todo">TODO: wetsuit affiliate placeholder — no products or links yet.</p>
-</div>
+{# Patagonia wetsuit picks via Impact. Links/bands live in data/affiliate.json. No prices, no coupon codes, no tracking pixels. #}
+{% set band = shop.bands.get(s.wear_key) if (s is defined and s.wear_key) else none %}
+<section class="box affiliate" aria-labelledby="shop-h">
+  <h2 id="shop-h">{% if band and band.picks %}Shop this wetsuit{% else %}Shop wetsuits{% endif %}</h2>
+  {% if s is defined and s.wear %}
+  <p>Today's call at {{ s.name }}: <strong>{{ s.wear }}</strong>{% if s.water_temp_f is not none %} ({{ '%.1f'|format(s.water_temp_f) }}°F){% endif %}.{% if band %} {{ band.note }}{% endif %}</p>
+  {% elif s is defined %}
+  <p>No recent water temp here, so no specific pick today. Browse Patagonia's wetsuit lineup:</p>
+  {% else %}
+  <p>Yulex natural-rubber wetsuits from <a href="{{ shop.links.home.url }}" rel="{{ shop.rel }}" target="_blank">Patagonia</a>, from spring suits to hooded R3s. Each spot page suggests a suit for today's water temp.</p>
+  {% endif %}
+  {% if band and band.picks %}
+  <ul class="picks">
+    {% for k in band.picks %}{% set p = shop.products[k] %}
+    <li><a href="{{ p.url }}" rel="{{ shop.rel }}" target="_blank">{{ p.name }}</a>{% if loop.first %} <span class="tag">Top pick</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <p class="cats"><a href="{{ shop.links.womens.url }}" rel="{{ shop.rel }}" target="_blank">{{ shop.links.womens.label }}</a> · <a href="{{ shop.links.mens.url }}" rel="{{ shop.rel }}" target="_blank">{{ shop.links.mens.label }}</a></p>
+  <p class="disclosure">{{ shop.disclosure }} <a href="{{ base }}/about/#affiliate-disclosure">Details</a>.</p>
+</section>

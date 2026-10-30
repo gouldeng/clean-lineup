@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ s.name }} water quality & water temp today | Clean Lineup{% endblock %}
-{% block description %}{{ s.name }} ({{ s.county }} County): {% if s.status == 'unknown' %}no recent official water-quality status{% else %}water quality {{ s.status|status_label|lower }}{% endif %}{% if s.water_temp_f is not none %}, water temp {{ '%.0f'|format(s.water_temp_f) }}°F — {{ s.wear|lower }}{% endif %}. Updated {{ generated|pt }}.{% endblock %}
+{% block title %}{{ s.name }} Water Quality, Water Temp & Wetsuit Today | Clean Lineup{% endblock %}
+{% block description %}Is {{ s.name }} safe to surf today? {% if s.status == 'unknown' %}Latest official water-quality info{% else %}Water quality: {{ s.status|status_label|lower }}{% endif %}{% if s.water_temp_f is not none %}, water temp {{ '%.0f'|format(s.water_temp_f) }}°F{% else %}, live water temp{% endif %}, and what wetsuit to wear in {{ s.county }} County.{% endblock %}
 {% block head %}
 <meta name="geo.position" content="{{ s.lat }};{{ s.lon }}">
 <script type="application/ld+json">{{ {
@@ -9,9 +9,10 @@
     {"@type": "Beach", "@id": canonical ~ "#beach", "name": s.name,
      "geo": {"@type": "GeoCoordinates", "latitude": s.lat, "longitude": s.lon},
      "address": {"@type": "PostalAddress", "addressRegion": "CA", "addressCountry": "US"},
+     "url": canonical, "description": s.name ~ " is " ~ s.blurb ~ " in " ~ s.county ~ " County, California.",
      "containedInPlace": {"@type": "AdministrativeArea", "name": s.county ~ " County, California"}},
     {"@type": "WebPage", "@id": canonical, "url": canonical,
-     "name": s.name ~ " water quality & water temp today | Clean Lineup",
+     "name": s.name ~ " Water Quality, Water Temp & Wetsuit Today | Clean Lineup",
      "dateModified": generated, "about": {"@id": canonical ~ "#beach"},
      "isPartOf": {"@type": "WebSite", "name": "Clean Lineup", "url": site_url ~ "/"}},
     {"@type": "BreadcrumbList", "itemListElement": [
@@ -64,6 +65,7 @@
   {% endif %}
 
   <h2>About {{ s.name }}</h2>
+  <p class="spot-summary">{{ summary }}</p>
   <p class="evergreen">{{ s.name }} is {{ s.blurb }} in {{ s.county }} County. Like most Southern California breaks, its water quality is driven mostly by runoff: after rain, storm drains, creeks and river mouths flush bacteria into the surf zone, and county health officers advise staying out of the ocean for at least 72 hours. During dry weather, water near creek mouths, piers and enclosed beaches still tends to grade worse than open coastline. County agencies sample weekly (more often in summer) and post advisories when bacteria exceed state standards, or close beaches after sewage spills. Ocean temperatures here typically run from the high 50s°F in spring upwelling to the low-to-mid 70s°F in late summer, so check the live reading above before choosing your rubber.</p>
 
   {% include "_affiliate.html" %}

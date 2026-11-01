@@ -13,6 +13,7 @@ from html import unescape
 from pathlib import Path
 
 import requests
+from zoneinfo import ZoneInfo
 
 from spots import SPOTS, LA_URL, OC_URL, SD_URL, VC_URL, SB_URL
 
@@ -87,9 +88,38 @@ def fetch_sd():
 
 # ---------------------------------------------------------------- Los Angeles
 LA_KML = "https://www.google.com/maps/d/kml?mid=1hrin1gMc6ok2dKu9d1i9szZKC6Y&forcekml=1"
-# The DPH map publishes no legend. Only colours whose meaning has been verified
-# against the DPH page should be added here; anything else stays "unknown".
-LA_COLOR_STATUS: dict[str, str] = {}
+# Legend published by LA County DPH next to the map (beach_grades.cfm -> Capture.JPG, checked 2026-11-01):
+#   green  = ocean water bacteria level meets State standards                    -> open
+#   yellow = Advisory: exceeds State standards; also used for ALL beaches during
+#            an ocean water quality rain advisory                                 -> advisory
+#   red    = Closed: sewage-contaminated water or other health hazard             -> closed
+#   white  = no recent sample results available                                   -> unknown
+# Exact hex values seen on the map so far. Any other colour is classified by hue
+# (see _la_color_status) so a new shade of red/green/yellow can't silently become "unknown".
+LA_COLOR_STATUS: dict[str, str] = {"009D57": "open", "F4EB37": "advisory", "FFFFFF": "unknown"}
+LA_STATUS_TEXT = {"open": "meets State standards", "advisory": "exceeds State standards / rain advisory (yellow)",
+                  "closed": "closed (sewage or other health hazard)", "unknown": "no recent sample results"}
+
+
+def _la_color_status(hexcol):
+    if not hexcol:
+        return "unknown"
+    if hexcol in LA_COLOR_STATUS:
+        return LA_COLOR_STATUS[hexcol]
+    import colorsys
+    r, g, b = (int(hexcol[i:i + 2], 16) / 255 for i in (0, 2, 4))
+    h, sat, v = colorsys.rgb_to_hsv(r, g, b)
+    h *= 360
+    if sat < 0.25:
+        return "unknown"  # white/grey marker
+    if h >= 340 or h < 20:
+        return "closed"
+    if 40 <= h < 70:
+        return "advisory"
+    if 90 <= h < 170:
+        return "open"
+    print(f"[warn] LA map colour {hexcol} not in DPH legend; treating as unknown", file=sys.stderr)
+    return "unknown"
 
 
 def fetch_la_map():
@@ -102,8 +132,8 @@ def fetch_la_map():
     for pm in re.findall(r"<Placemark>(.*?)</Placemark>", k, re.S):
         name = re.sub(r"<!\[CDATA\[|\]\]>", "", re.search(r"<name>(.*?)</name>", pm, re.S).group(1)).strip()
         color = (re.search(r"icon-\d+-([0-9A-F]{6})", pm) or [None, None])[1]
-        st[name] = dict(color=color, status=LA_COLOR_STATUS.get(color, "unknown"))
-    return dict(stations=st, updated_label=updated, colors=sorted({v["color"] for v in st.values()}))
+        st[name] = dict(color=color, status=_la_color_status(color))
+    return dict(stations=st, updated_label=updated, colors=sorted({v["color"] for v in st.values() if v["color"]}))
 
 
 MONTHS = {m: i for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july",
@@ -117,21 +147,42 @@ def _la_dt(month, day, year, hhmm, ampm):
     return datetime(int(year), MONTHS[month.lower()], int(day), h, int(m), tzinfo=ZoneInfo("America/Los_Angeles"))
 
 
+LA_PAGE_HTTPS = "https://admin.publichealth.lacounty.gov/phcommon/public/eh/water_quality/beach_grades.cfm"
+_LA_DATE = r"\w+day,?\s+(\w+)\s+(\d+),\s+(\d{4})"
+_LA_TIME = r"(\d{1,2}(?::\d\d)?)\s*([ap])\.?\s*m"
+
+
+def _la_dates(t, lead):
+    """Find '<lead> <weekday>, <Month> <d>, <yyyy> at <time>' and '<lead> <time>, <weekday>, <Month> <d>, <yyyy>'."""
+    out = []
+    for m in re.finditer(lead + r"\s+" + _LA_DATE + r",?\s+at\s+" + _LA_TIME, t, re.I):
+        out.append(_la_dt(*m.groups()))
+    for m in re.finditer(lead + r"\s+" + _LA_TIME + r",?\s+" + _LA_DATE, t, re.I):
+        hhmm, ampm, mon, day, yr = m.groups()
+        out.append(_la_dt(mon, day, yr, hhmm, ampm))
+    return out
+
+
 def fetch_la_page():
-    """County-wide rain advisory from the DPH ocean water page (plain HTTP only)."""
-    r = session.get(LA_URL, timeout=25)
-    r.raise_for_status()
+    """County-wide rain advisory + current press-release warnings from the DPH ocean water page.
+    The public URL (LA_URL) is plain HTTP; DPH also serves the same page over HTTPS on admin.publichealth."""
+    r = None
+    for url in (LA_PAGE_HTTPS, LA_URL):
+        try:
+            r = session.get(url, timeout=25)
+            r.raise_for_status()
+            if "Rain Advisory" in r.text or "Beach Water Quality" in r.text:
+                break
+        except requests.RequestException:
+            r = None
+    if r is None:
+        raise RuntimeError("DPH beach page unreachable over HTTPS and HTTP")
     t = text_of(r.text)
-    pat = r"(?:In Effect Until|ended|extended until|in effect until)\s+\w+day,\s+(\w+)\s+(\d+),\s+(\d{4}),?\s+at\s+(\d{1,2}(?::\d\d)?)\s*([ap])\.?m"
-    until = None
-    for m in re.finditer(r"In Effect Until\s+\w+day,\s+(\w+)\s+(\d+),\s+(\d{4}),?\s+at\s+(\d{1,2}(?::\d\d)?)\s*([ap])\.?m", t, re.I):
-        d = _la_dt(*m.groups())
-        until = max(until, d) if until else d
-    ended = None
-    for m in re.finditer(r"Advisory ended\s+\w+day,\s+(\w+)\s+(\d+),\s+(\d{4}),?\s+at\s+(\d{1,2}(?::\d\d)?)\s*([ap])\.?m", t, re.I):
-        d = _la_dt(*m.groups())
-        ended = max(ended, d) if ended else d
-    active = bool(until and NOW < until and not (ended and ended >= until - timedelta(days=7) and ended <= NOW))
+    until_pats = r"(?:in effect until|in effect at least until|extended until|in effect through)"
+    until = max(_la_dates(t, until_pats), default=None)
+    ended = max(_la_dates(t, r"(?:Advisory (?:has )?ended|advisory was lifted|lifted)"), default=None)
+    declared = bool(re.search(r"Rain Advisory has been (?:declared|issued|extended)", t, re.I))
+    active = bool(until and NOW < until and (declared or not ended or ended < until - timedelta(days=7)))
     return dict(rain_advisory=active, advisory_until=iso(until), advisory_ended=iso(ended))
 
 
@@ -408,21 +459,28 @@ def main():
                 rec["status_detail"] = "; ".join(f'{s["label"]}: {s["name"]}' for s in bad) or None
         elif c == "Los Angeles":
             rec.update(source="LA County Dept. of Public Health", source_url=LA_URL)
-            if la_page and la_page["rain_advisory"]:
-                rec["status"] = "advisory"
-                rec["status_detail"] = f'County-wide rain advisory until {la_page["advisory_until"]}'
+            rain_adv = bool(la_page and la_page["rain_advisory"])
             if la_map:
                 ss = []
                 for code in sp.get("la_stations", []):
                     for nm, v in la_map["stations"].items():
                         if nm.startswith(code + " "):
-                            ss.append(dict(id=code, name=nm, color=v["color"], status=v["status"]))
+                            ss.append(dict(id=code, name=nm, color=v["color"], status=v["status"],
+                                           label=LA_STATUS_TEXT[v["status"]]))
                 rec["stations"] = ss
                 rec["status_updated"] = la_map["updated_label"]
-                if rec["status"] == "unknown":
-                    rec["status"] = worst([s["status"] for s in ss])
-                if rec["status"] == "unknown" and ss:
-                    rec["status_detail"] = "DPH map shows no current result for these stations (results pending)"
+                rec["status"] = worst([s["status"] for s in ss])
+                bad = [s for s in ss if s["status"] in ("closed", "advisory")]
+                if bad and not rain_adv:
+                    rec["status_detail"] = "DPH map: " + "; ".join(f'{s["name"]} {s["label"]}' for s in bad)
+                elif rec["status"] == "unknown" and ss:
+                    rec["status_detail"] = "DPH map shows no recent sample results for these stations"
+            if rain_adv:
+                if rec["status"] != "closed":
+                    rec["status"] = "advisory"
+                until = la_page["advisory_until"]
+                until_txt = datetime.fromisoformat(until).astimezone(ZoneInfo("America/Los_Angeles")).strftime("%a %b %-d, %-I:%M %p PT") if until else None
+                rec["status_detail"] = "LA County ocean water quality rain advisory for all beaches" + (f", in effect at least until {until_txt}" if until_txt else "")
         elif c == "Orange":
             rec.update(source="OC Health Care Agency (ocbeachinfo.com)", source_url=OC_URL)
             if oc:

@@ -1,16 +1,16 @@
 {
- "generated": "2026-11-01T15:26:01Z",
+ "generated": "2026-11-01T18:28:01Z",
  "spot_count": 65,
  "status_counts": {
   "closed": 2,
-  "advisory": 9,
-  "open": 36,
+  "advisory": 28,
+  "open": 17,
   "unknown": 18
  },
  "sources": {
   "sd_sdbeachinfo": {
    "ok": true,
-   "seconds": 9.5
+   "seconds": 10.6
   },
   "la_dph_map_kml": {
    "ok": true,
@@ -18,27 +18,27 @@
   },
   "la_dph_page": {
    "ok": true,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   "oc_ocbeachinfo": {
    "ok": true,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   "vc_safebeaches_arcgis": {
    "ok": true,
-   "seconds": 0.4
+   "seconds": 0.2
   },
   "sb_ocean_water_arcgis": {
    "ok": true,
-   "seconds": 0.5
+   "seconds": 0.4
   },
   "healthebay_grades": {
    "ok": true,
-   "seconds": 0.9
+   "seconds": 0.8
   },
   "ndbc_water_temp": {
    "ok": true,
-   "seconds": 9.2
+   "seconds": 9.3
   },
   "nws_rain_KLAX": {
    "ok": true,
@@ -46,19 +46,19 @@
   },
   "nws_rain_KSNA": {
    "ok": true,
-   "seconds": 0.9
+   "seconds": 0.8
   },
   "nws_rain_KSAN": {
    "ok": true,
-   "seconds": 0.8
+   "seconds": 0.7
   },
   "nws_rain_KOXR": {
    "ok": true,
-   "seconds": 0.8
+   "seconds": 1.0
   },
   "nws_rain_KSBA": {
    "ok": true,
-   "seconds": 0.7
+   "seconds": 0.8
   }
  },
  "county_notes": {
@@ -85,11 +85,11 @@
    "updated": "2026-10-30T15:02:28Z"
   },
   "sd": {
-   "updated": "2026-10-31T23:30:25Z",
+   "updated": "2026-11-01T15:59:05Z",
    "counts": {
     "closed": 10,
-    "advisory": 12,
-    "open": 68,
+    "advisory": 79,
+    "open": 1,
     "unknown": 0
    }
   },
@@ -99,8 +99,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "Orange": {
@@ -109,25 +109,25 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "San Diego": {
     "station": "KSAN",
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "Ventura": {
     "station": "KOXR",
     "inches_72h": 0.54,
     "last_rain": "2026-11-01T09:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 66,
-    "coverage_from": "2026-10-29T16:51:00Z",
+    "hours_remaining": 63,
+    "coverage_from": "2026-10-29T19:51:00Z",
     "observations": 57
    },
    "Santa Barbara": {
@@ -135,8 +135,8 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T08:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 65,
-    "coverage_from": "2026-10-29T15:55:00Z",
+    "hours_remaining": 62,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 57
    }
   }
@@ -169,11 +169,11 @@
     "site": "Sands at Coal Oil Point",
     "id": 71
    },
-   "water_temp_f": 72.9,
+   "water_temp_f": 73.2,
    "temp_source": "NOAA NDBC 46053 \u2013 EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
    "temp_station": "46053",
    "temp_distance_km": 18.3,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -181,8 +181,8 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T08:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 65,
-    "coverage_from": "2026-10-29T15:55:00Z",
+    "hours_remaining": 62,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 57
    },
    "rain_flag": true
@@ -214,11 +214,11 @@
     "site": "Leadbetter Beach at Honda Creek",
     "id": 75
    },
-   "water_temp_f": 72.9,
+   "water_temp_f": 73.2,
    "temp_source": "NOAA NDBC 46053 \u2013 EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
    "temp_station": "46053",
    "temp_distance_km": 22.0,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -226,8 +226,8 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T08:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 65,
-    "coverage_from": "2026-10-29T15:55:00Z",
+    "hours_remaining": 62,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 57
    },
    "rain_flag": true
@@ -259,11 +259,11 @@
     "site": "Carpinteria State Beach at Carpinteria Creek",
     "id": 80
    },
-   "water_temp_f": 72.9,
+   "water_temp_f": 73.2,
    "temp_source": "NOAA NDBC 46053 \u2013 EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
    "temp_station": "46053",
    "temp_distance_km": 33.7,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -271,8 +271,8 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T08:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 65,
-    "coverage_from": "2026-10-29T15:55:00Z",
+    "hours_remaining": 62,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 57
    },
    "rain_flag": true
@@ -310,11 +310,11 @@
     "site": "Rincon Beach- South of Creek",
     "id": 83
    },
-   "water_temp_f": 72.9,
+   "water_temp_f": 73.2,
    "temp_source": "NOAA NDBC 46053 \u2013 EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
    "temp_station": "46053",
    "temp_distance_km": 36.5,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -322,8 +322,8 @@
     "inches_72h": 0.54,
     "last_rain": "2026-11-01T09:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 66,
-    "coverage_from": "2026-10-29T16:51:00Z",
+    "hours_remaining": 63,
+    "coverage_from": "2026-10-29T19:51:00Z",
     "observations": 57
    },
    "rain_flag": true
@@ -355,11 +355,11 @@
     "site": "Surfer's Point at Seaside- Across from Handicap Footpath",
     "id": 95
    },
-   "water_temp_f": 72.9,
+   "water_temp_f": 73.2,
    "temp_source": "NOAA NDBC 46053 \u2013 EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
    "temp_station": "46053",
    "temp_distance_km": 49.4,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -367,8 +367,8 @@
     "inches_72h": 0.54,
     "last_rain": "2026-11-01T09:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 66,
-    "coverage_from": "2026-10-29T16:51:00Z",
+    "hours_remaining": 63,
+    "coverage_from": "2026-10-29T19:51:00Z",
     "observations": 57
    },
    "rain_flag": true
@@ -412,11 +412,11 @@
     "site": "Promenade Park- Paseo De Playa Street",
     "id": 97
    },
-   "water_temp_f": 72.9,
+   "water_temp_f": 73.2,
    "temp_source": "NOAA NDBC 46053 \u2013 EAST SANTA BARBARA  - 12NM Southwest of Santa Barbara, CA",
    "temp_station": "46053",
    "temp_distance_km": 50.3,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -424,8 +424,8 @@
     "inches_72h": 0.54,
     "last_rain": "2026-11-01T09:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 66,
-    "coverage_from": "2026-10-29T16:51:00Z",
+    "hours_remaining": 63,
+    "coverage_from": "2026-10-29T19:51:00Z",
     "observations": 57
    },
    "rain_flag": true
@@ -469,11 +469,11 @@
     "site": "Silverstrand Beach - San Nicholas Avenue",
     "id": 119
    },
-   "water_temp_f": 74.3,
+   "water_temp_f": 72.5,
    "temp_source": "NOAA NDBC 46025 \u2013 Santa Monica Basin - 33NM WSW of Santa Monica, CA",
    "temp_station": "46025",
    "temp_distance_km": 45.7,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -481,8 +481,8 @@
     "inches_72h": 0.54,
     "last_rain": "2026-11-01T09:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 66,
-    "coverage_from": "2026-10-29T16:51:00Z",
+    "hours_remaining": 63,
+    "coverage_from": "2026-10-29T19:51:00Z",
     "observations": 57
    },
    "rain_flag": true
@@ -514,11 +514,11 @@
     "site": "Port Hueneme Beach Park- North of Pier",
     "id": 82
    },
-   "water_temp_f": 74.3,
+   "water_temp_f": 72.5,
    "temp_source": "NOAA NDBC 46025 \u2013 Santa Monica Basin - 33NM WSW of Santa Monica, CA",
    "temp_station": "46025",
    "temp_distance_km": 43.2,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -526,8 +526,8 @@
     "inches_72h": 0.54,
     "last_rain": "2026-11-01T09:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 66,
-    "coverage_from": "2026-10-29T16:51:00Z",
+    "hours_remaining": 63,
+    "coverage_from": "2026-10-29T19:51:00Z",
     "observations": 57
    },
    "rain_flag": true
@@ -565,11 +565,11 @@
     "site": "Leo Carrillo Beach, at Arroyo Sequit Creek mouth",
     "id": 1
    },
-   "water_temp_f": 71.6,
+   "water_temp_f": 71.8,
    "temp_source": "NOAA NDBC 46268 \u2013 Topanga Nearshore, CA (103)",
    "temp_station": "46268",
    "temp_distance_km": 32.9,
-   "temp_time": "2026-11-01T14:00:00Z",
+   "temp_time": "2026-11-01T17:00:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -577,8 +577,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -628,11 +628,11 @@
     "site": "Zuma Beach at Zuma Creek mouth",
     "id": 4
    },
-   "water_temp_f": 71.6,
+   "water_temp_f": 71.8,
    "temp_source": "NOAA NDBC 46268 \u2013 Topanga Nearshore, CA (103)",
    "temp_station": "46268",
    "temp_distance_km": 22.4,
-   "temp_time": "2026-11-01T14:00:00Z",
+   "temp_time": "2026-11-01T17:00:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -640,8 +640,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -673,11 +673,11 @@
     "site": "Paradise Cove Pier at Ramirez Canyon Creek mouth",
     "id": 5
    },
-   "water_temp_f": 71.6,
+   "water_temp_f": 71.8,
    "temp_source": "NOAA NDBC 46268 \u2013 Topanga Nearshore, CA (103)",
    "temp_station": "46268",
    "temp_distance_km": 19.7,
-   "temp_time": "2026-11-01T14:00:00Z",
+   "temp_time": "2026-11-01T17:00:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -685,8 +685,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -736,11 +736,11 @@
     "site": "Surfrider Beach at Malibu Colony fence",
     "id": 8
    },
-   "water_temp_f": 71.6,
+   "water_temp_f": 71.8,
    "temp_source": "NOAA NDBC 46268 \u2013 Topanga Nearshore, CA (103)",
    "temp_station": "46268",
    "temp_distance_km": 9.7,
-   "temp_time": "2026-11-01T14:00:00Z",
+   "temp_time": "2026-11-01T17:00:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -748,8 +748,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -787,11 +787,11 @@
     "site": "Topanga Beach at creek mouth",
     "id": 14
    },
-   "water_temp_f": 71.6,
+   "water_temp_f": 71.8,
    "temp_source": "NOAA NDBC 46268 \u2013 Topanga Nearshore, CA (103)",
    "temp_station": "46268",
    "temp_distance_km": 1.8,
-   "temp_time": "2026-11-01T14:00:00Z",
+   "temp_time": "2026-11-01T17:00:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -799,8 +799,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -844,11 +844,11 @@
     "site": "Will Rogers State Beach at 17200 PCH (1/4 mile east of Sunset drain)",
     "id": 15
    },
-   "water_temp_f": 71.6,
+   "water_temp_f": 71.8,
    "temp_source": "NOAA NDBC 46268 \u2013 Topanga Nearshore, CA (103)",
    "temp_station": "46268",
    "temp_distance_km": 3.2,
-   "temp_time": "2026-11-01T14:00:00Z",
+   "temp_time": "2026-11-01T17:00:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -856,8 +856,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -905,7 +905,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 0.2,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -913,8 +913,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -962,7 +962,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 2.9,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -970,8 +970,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1007,7 +1007,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 4.4,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1015,8 +1015,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1058,7 +1058,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 8.8,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1066,8 +1066,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1103,7 +1103,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 13.8,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1111,8 +1111,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1154,7 +1154,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 14.8,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1162,8 +1162,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1199,7 +1199,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 17.3,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1207,8 +1207,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1256,7 +1256,7 @@
    "temp_source": "NOAA NDBC ICAC1 \u2013 9410840 - Santa Monica Pier",
    "temp_station": "ICAC1",
    "temp_distance_km": 21.3,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Springsuit or 2mm",
    "wear_key": "spring_2mm",
    "rain": {
@@ -1264,8 +1264,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1307,7 +1307,7 @@
    "temp_source": "NOAA NDBC 46256 \u2013 Long Beach Channel, CA (215)",
    "temp_station": "46256",
    "temp_distance_km": 21.3,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1315,8 +1315,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1352,7 +1352,7 @@
    "temp_source": "NOAA NDBC 46256 \u2013 Long Beach Channel, CA (215)",
    "temp_station": "46256",
    "temp_distance_km": 11.4,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1360,8 +1360,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1397,7 +1397,7 @@
    "temp_source": "NOAA NDBC 46256 \u2013 Long Beach Channel, CA (215)",
    "temp_station": "46256",
    "temp_distance_km": 7.7,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1405,8 +1405,8 @@
     "inches_72h": 0.56,
     "last_rain": "2026-11-01T10:53:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:53:00Z",
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:53:00Z",
     "observations": 58
    },
    "rain_flag": true
@@ -1423,7 +1423,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1435,7 +1435,7 @@
    "temp_source": "NOAA NDBC 46256 \u2013 Long Beach Channel, CA (215)",
    "temp_station": "46256",
    "temp_distance_km": 9.7,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1444,8 +1444,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1461,7 +1461,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1473,7 +1473,7 @@
    "temp_source": "NOAA NDBC 46256 \u2013 Long Beach Channel, CA (215)",
    "temp_station": "46256",
    "temp_distance_km": 13.5,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1482,8 +1482,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1499,7 +1499,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1511,7 +1511,7 @@
    "temp_source": "NOAA NDBC 46256 \u2013 Long Beach Channel, CA (215)",
    "temp_station": "46256",
    "temp_distance_km": 16.2,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1520,8 +1520,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1537,7 +1537,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A",
     "wet": "A",
@@ -1545,11 +1545,11 @@
     "site": "Huntington City Beach - Huntington Street",
     "id": 147
    },
-   "water_temp_f": 74.7,
+   "water_temp_f": 74.8,
    "temp_source": "NOAA NDBC 46253 \u2013 San Pedro South, CA (213)",
    "temp_station": "46253",
    "temp_distance_km": 18.8,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1558,8 +1558,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1575,7 +1575,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1583,11 +1583,11 @@
     "site": "Huntington State Beach- projection of Magnolia Street",
     "id": 149
    },
-   "water_temp_f": 74.7,
+   "water_temp_f": 74.8,
    "temp_source": "NOAA NDBC 46253 \u2013 San Pedro South, CA (213)",
    "temp_station": "46253",
    "temp_distance_km": 20.3,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1596,8 +1596,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1613,7 +1613,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -1621,11 +1621,11 @@
     "site": "Newport Beach- projection of 52nd/53rd Street",
     "id": 153
    },
-   "water_temp_f": 74.7,
+   "water_temp_f": 74.8,
    "temp_source": "NOAA NDBC 46253 \u2013 San Pedro South, CA (213)",
    "temp_station": "46253",
    "temp_distance_km": 22.6,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1634,8 +1634,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1651,7 +1651,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -1659,11 +1659,11 @@
     "site": "Balboa Beach - The Wedge",
     "id": 157
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 24.9,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1672,8 +1672,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1689,7 +1689,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1697,11 +1697,11 @@
     "site": "Corona del Mar - Little Corona Beach",
     "id": 203
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 24.5,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1710,8 +1710,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1727,7 +1727,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1735,11 +1735,11 @@
     "site": "Crystal Cove at El Moro Beach",
     "id": 207
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 21.6,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1748,8 +1748,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1765,7 +1765,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1773,11 +1773,11 @@
     "site": "Laguna Beach- Laguna Main Beach",
     "id": 210
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 14.5,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1786,8 +1786,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1803,7 +1803,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "F",
     "wet": "ns",
@@ -1811,11 +1811,11 @@
     "site": "Laguna Beach- Projection of Bluebird Canyon",
     "id": 212
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 12.8,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1824,8 +1824,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1841,7 +1841,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1849,11 +1849,11 @@
     "site": "Salt Creek County Beach",
     "id": 255
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 5.6,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1862,8 +1862,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1879,7 +1879,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -1887,11 +1887,11 @@
     "site": "Doheny State Beach - Mid Beach",
     "id": 228
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 2.0,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1900,8 +1900,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1917,7 +1917,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1925,11 +1925,11 @@
     "site": "Poche Beach",
     "id": 238
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 3.2,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1938,8 +1938,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1955,7 +1955,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -1963,11 +1963,11 @@
     "site": "San Clemente Pier drain (Point Zero)",
     "id": 1051
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 6.2,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -1976,8 +1976,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -1993,7 +1993,7 @@
    "stations": [],
    "source": "OC Health Care Agency (ocbeachinfo.com)",
    "source_url": "https://ocbeachinfo.com/",
-   "status_updated": "2026-11-01T15:26:01Z",
+   "status_updated": "2026-11-01T18:28:01Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2001,11 +2001,11 @@
     "site": "San Clemente - T Street",
     "id": 535
    },
-   "water_temp_f": 73.0,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46285 \u2013 Capistrano Beach Nearshore, CA (284)",
    "temp_station": "46285",
    "temp_distance_km": 6.5,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2014,8 +2014,8 @@
     "last_rain": "2026-11-01T05:53:00Z",
     "rain_flag": false,
     "hours_remaining": null,
-    "coverage_from": "2026-10-29T16:39:00Z",
-    "observations": 56
+    "coverage_from": "2026-10-29T19:53:00Z",
+    "observations": 55
    },
    "rain_flag": false
   },
@@ -2039,11 +2039,11 @@
     "site": "San Onofre State Beach, Trestles San Mateo Crk",
     "id": 2112
    },
-   "water_temp_f": 74.1,
+   "water_temp_f": 73.6,
    "temp_source": "NOAA NDBC 46277 \u2013 Green Beach Offshore, CA (271)",
    "temp_station": "46277",
    "temp_distance_km": 8.1,
-   "temp_time": "2026-11-01T15:00:00Z",
+   "temp_time": "2026-11-01T18:00:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2051,9 +2051,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2064,25 +2064,25 @@
    "lat": 33.2044,
    "lon": -117.3941,
    "blurb": "jetty-shaped beach-break peaks near the mouth of Oceanside Harbor",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Harbor Beach \u2013 Harbor Beach; Advisory: Harbor Beach \u2013 San Luis Rey River Outlet",
    "stations": [
     {
      "id": "184",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Harbor Beach \u2013 Harbor Beach"
     },
     {
      "id": "183",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Harbor Beach \u2013 San Luis Rey River Outlet"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "A+",
@@ -2090,11 +2090,11 @@
     "site": "Oceanside, San Luis Rey River outlet",
     "id": 268
    },
-   "water_temp_f": 73.4,
+   "water_temp_f": 73.8,
    "temp_source": "NOAA NDBC 46224 \u2013 Oceanside Offshore, CA (045)",
    "temp_station": "46224",
    "temp_distance_km": 7.8,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2102,9 +2102,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2115,25 +2115,25 @@
    "lat": 33.1937,
    "lon": -117.3843,
    "blurb": "a classic North County beach break on both sides of the Oceanside Pier",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Oceanside Municipal Beach \u2013 Oceanside Pier; Advisory: Oceanside Municipal Beach \u2013 Tyson Street",
    "stations": [
     {
      "id": "181",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Oceanside Municipal Beach \u2013 Oceanside Pier"
     },
     {
      "id": "180",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Oceanside Municipal Beach \u2013 Tyson Street"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2141,11 +2141,11 @@
     "site": "Oceanside, projection of Tyson St.",
     "id": 272
    },
-   "water_temp_f": 73.4,
+   "water_temp_f": 73.8,
    "temp_source": "NOAA NDBC 46224 \u2013 Oceanside Offshore, CA (045)",
    "temp_station": "46224",
    "temp_distance_km": 8.3,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2153,9 +2153,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2166,25 +2166,25 @@
    "lat": 33.1454,
    "lon": -117.3451,
    "blurb": "a consistent beach break in Carlsbad at the Tamarack Avenue stairs",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Carlsbad State Beach \u2013 Tamarack Ave",
    "stations": [
     {
      "id": "82",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Carlsbad State Beach \u2013 Tamarack Ave"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": null,
    "water_temp_f": 74.8,
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 9.7,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2192,9 +2192,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2205,25 +2205,25 @@
    "lat": 33.1063,
    "lon": -117.3215,
    "blurb": "a reliable beach break at the south end of South Carlsbad State Beach near Batiquitos Lagoon",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: South Carlsbad State Beach \u2013 Ponto Drive; Advisory: South Carlsbad State Beach \u2013 Batiquitos Lagoon Outlet",
    "stations": [
     {
      "id": "95",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "South Carlsbad State Beach \u2013 Ponto Drive"
     },
     {
      "id": "78",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "South Carlsbad State Beach \u2013 Batiquitos Lagoon Outlet"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2235,7 +2235,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 5.0,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2243,9 +2243,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2256,19 +2256,19 @@
    "lat": 33.0481,
    "lon": -117.2989,
    "blurb": "Encinitas's town beach, a playful beach break at Cottonwood Creek",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Moonlight Beach \u2013 Cottonwood Creek Outlet",
    "stations": [
     {
      "id": "72",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Moonlight Beach \u2013 Cottonwood Creek Outlet"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A",
     "wet": "ns",
@@ -2280,7 +2280,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 2.1,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2288,9 +2288,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2301,19 +2301,19 @@
    "lat": 33.0344,
    "lon": -117.2931,
    "blurb": "a famous right-hand reef point below the Self-Realization Fellowship gardens",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Swami's Park \u2013 Swami's",
    "stations": [
     {
      "id": "71",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Swami's Park \u2013 Swami's"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2325,7 +2325,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 3.6,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2333,9 +2333,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2346,25 +2346,25 @@
    "lat": 33.0283,
    "lon": -117.2889,
    "blurb": "a reef break at the north end of San Elijo State Beach campground",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: San Elijo State Beach \u2013 Pipes; Advisory: San Elijo State Beach \u2013 Stairs Near Main Entrance",
    "stations": [
     {
      "id": "68",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "San Elijo State Beach \u2013 Pipes"
     },
     {
      "id": "205",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "San Elijo State Beach \u2013 Stairs Near Main Entrance"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2376,7 +2376,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 4.4,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2384,9 +2384,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2397,25 +2397,25 @@
    "lat": 33.0157,
    "lon": -117.2819,
    "blurb": "a forgiving reef break at the San Elijo Lagoon mouth, a longboard and beginner staple",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Cardiff State Beach \u2013 San Elijo Lagoon Outlet; Advisory: Cardiff State Beach \u2013 Charthouse Parking",
    "stations": [
     {
      "id": "204",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Cardiff State Beach \u2013 San Elijo Lagoon Outlet"
     },
     {
      "id": "203",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Cardiff State Beach \u2013 Charthouse Parking"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2427,7 +2427,7 @@
    "temp_source": "NOAA NDBC 46274 \u2013 Leucadia Nearshore, CA (262)",
    "temp_station": "46274",
    "temp_distance_km": 6.0,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2435,9 +2435,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2448,25 +2448,25 @@
    "lat": 33.0013,
    "lon": -117.2783,
    "blurb": "a quality right and left reef at Cardiff's south end",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Cardiff State Beach \u2013 Seaside State Park; Advisory: Cardiff State Beach \u2013 Las Olas (Georges)",
    "stations": [
     {
      "id": "201",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Cardiff State Beach \u2013 Seaside State Park"
     },
     {
      "id": "202",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Cardiff State Beach \u2013 Las Olas (Georges)"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A",
     "wet": "ns",
@@ -2474,11 +2474,11 @@
     "site": "Cardiff State Beach, Seaside State Park",
     "id": 301
    },
-   "water_temp_f": 75.7,
+   "water_temp_f": 75.9,
    "temp_source": "NOAA NDBC 46266 \u2013 Del Mar Nearshore, CA (153)",
    "temp_station": "46266",
    "temp_distance_km": 4.9,
-   "temp_time": "2026-11-01T14:26:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2486,9 +2486,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2499,25 +2499,25 @@
    "lat": 32.96,
    "lon": -117.2685,
    "blurb": "beach-break peaks off Powerhouse Park and the Del Mar river mouths",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Powerhouse Park 15th Street \u2013 15th St. Near Outlet; Advisory: San Dieguito River Beach \u2013 San Dieguito River Outlet",
    "stations": [
     {
      "id": "63",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Powerhouse Park 15th Street \u2013 15th St. Near Outlet"
     },
     {
      "id": "65",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "San Dieguito River Beach \u2013 San Dieguito River Outlet"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "ns",
     "wet": "B",
@@ -2525,11 +2525,11 @@
     "site": "Del Mar, San Dieguito River Beach",
     "id": 305
    },
-   "water_temp_f": 75.7,
+   "water_temp_f": 75.9,
    "temp_source": "NOAA NDBC 46266 \u2013 Del Mar Nearshore, CA (153)",
    "temp_station": "46266",
    "temp_distance_km": 1.0,
-   "temp_time": "2026-11-01T14:26:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2537,9 +2537,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2550,19 +2550,19 @@
    "lat": 32.9345,
    "lon": -117.2619,
    "blurb": "a long beach break below the Torrey Pines bluffs at Los Pe\u00f1asquitos Lagoon",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Torrey Pines State Beach \u2013 Los Pe\u00f1asquitos Lagoon",
    "stations": [
     {
      "id": "109",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Torrey Pines State Beach \u2013 Los Pe\u00f1asquitos Lagoon"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -2570,11 +2570,11 @@
     "site": "Torrey Pines, Los Penasquitos Lagoon outlet",
     "id": 309
    },
-   "water_temp_f": 75.7,
+   "water_temp_f": 75.9,
    "temp_source": "NOAA NDBC 46266 \u2013 Del Mar Nearshore, CA (153)",
    "temp_station": "46266",
    "temp_distance_km": 3.0,
-   "temp_time": "2026-11-01T14:26:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2582,9 +2582,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2595,19 +2595,19 @@
    "lat": 32.8778,
    "lon": -117.2514,
    "blurb": "San Diego's most powerful beach break, focused by the Scripps submarine canyon",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Torrey Pines City Beach \u2013 Black's Beach",
    "stations": [
     {
      "id": "107",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Torrey Pines City Beach \u2013 Black's Beach"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -2615,11 +2615,11 @@
     "site": "La Jolla Shores, El Paseo Grande",
     "id": 517
    },
-   "water_temp_f": 74.8,
+   "water_temp_f": 75.0,
    "temp_source": "NOAA NDBC LJAC1 \u2013 9410230 - La Jolla, CA",
    "temp_station": "LJAC1",
    "temp_distance_km": 1.3,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2627,9 +2627,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2640,43 +2640,43 @@
    "lat": 32.8556,
    "lon": -117.2581,
    "blurb": "the region's classic beginner beach, a gentle break south of Scripps Pier",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: La Jolla Shores Beach \u2013 Ave De La Playa; Advisory: La Jolla Shores Beach \u2013 Vallecitos; Advisory: La Jolla Shores Beach \u2013 Del Oro; Advisory: La Jolla Shores Beach \u2013 El Paseo Grande; Advisory: La Jolla Shores Beach \u2013 1000 ft South of Scripps Pier",
    "stations": [
     {
      "id": "106",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "La Jolla Shores Beach \u2013 Ave De La Playa"
     },
     {
      "id": "54",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "La Jolla Shores Beach \u2013 Vallecitos"
     },
     {
      "id": "55",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "La Jolla Shores Beach \u2013 Del Oro"
     },
     {
      "id": "56",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "La Jolla Shores Beach \u2013 El Paseo Grande"
     },
     {
      "id": "206",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "La Jolla Shores Beach \u2013 1000 ft South of Scripps Pier"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -2684,11 +2684,11 @@
     "site": "La Jolla, Vallecitos",
     "id": 2076
    },
-   "water_temp_f": 74.8,
+   "water_temp_f": 75.0,
    "temp_source": "NOAA NDBC LJAC1 \u2013 9410230 - La Jolla, CA",
    "temp_station": "LJAC1",
    "temp_distance_km": 1.3,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2696,9 +2696,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2721,7 +2721,7 @@
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "ns",
     "wet": "A+",
@@ -2729,11 +2729,11 @@
     "site": "La Jolla, Children's Pool",
     "id": 2077
    },
-   "water_temp_f": 75.6,
+   "water_temp_f": 75.7,
    "temp_source": "NOAA NDBC 46254 \u2013 SCRIPPS Nearshore, CA (201)",
    "temp_station": "46254",
    "temp_distance_km": 2.0,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2741,9 +2741,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2754,31 +2754,31 @@
    "lat": 32.8294,
    "lon": -117.2805,
    "blurb": "a legendary La Jolla reef break with a powerful peak in front of the palm shack",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: WindanSea Beach \u2013 Playa Del Norte; Advisory: WindandSea Beach \u2013 Bonair; Advisory: WindanSea Beach \u2013 Palomar",
    "stations": [
     {
      "id": "45",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "WindanSea Beach \u2013 Playa Del Norte"
     },
     {
      "id": "103",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "WindandSea Beach \u2013 Bonair"
     },
     {
      "id": "43",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "WindanSea Beach \u2013 Palomar"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2786,11 +2786,11 @@
     "site": "Windansea Beach, projection of Playa Del Norte",
     "id": 321
    },
-   "water_temp_f": 75.6,
+   "water_temp_f": 75.7,
    "temp_source": "NOAA NDBC 46254 \u2013 SCRIPPS Nearshore, CA (201)",
    "temp_station": "46254",
    "temp_distance_km": 4.5,
-   "temp_time": "2026-11-01T14:56:00Z",
+   "temp_time": "2026-11-01T17:56:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2798,9 +2798,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2811,19 +2811,19 @@
    "lat": 32.805,
    "lon": -117.2628,
    "blurb": "a mellow longboard reef at Tourmaline Surf Park in north Pacific Beach",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Tourmaline Surf Park \u2013 Tourmaline Drain Outlet",
    "stations": [
     {
      "id": "101",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Tourmaline Surf Park \u2013 Tourmaline Drain Outlet"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2831,11 +2831,11 @@
     "site": "Pacific Beach, Tourmaline Surf Park (proj. of Tourmaline St.)",
     "id": 326
    },
-   "water_temp_f": 74.8,
+   "water_temp_f": 75.0,
    "temp_source": "NOAA NDBC LJAC1 \u2013 9410230 - La Jolla, CA",
    "temp_station": "LJAC1",
    "temp_distance_km": 6.9,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2843,9 +2843,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2856,19 +2856,19 @@
    "lat": 32.7945,
    "lon": -117.2562,
    "blurb": "a busy beach break around Crystal Pier at the end of Grand Avenue",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Pacific Beach \u2013 Grand Ave.",
    "stations": [
     {
      "id": "37",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Pacific Beach \u2013 Grand Ave."
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2876,11 +2876,11 @@
     "site": "Pacific Beach, projection of Grand Av.",
     "id": 328
    },
-   "water_temp_f": 74.8,
+   "water_temp_f": 75.0,
    "temp_source": "NOAA NDBC LJAC1 \u2013 9410230 - La Jolla, CA",
    "temp_station": "LJAC1",
    "temp_distance_km": 8.1,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2888,9 +2888,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2901,13 +2901,13 @@
    "lat": 32.7713,
    "lon": -117.2535,
    "blurb": "beach-break peaks from Belmont Park south to the Mission Bay jetty",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Mission Beach \u2013 Belmont Park",
    "stations": [
     {
      "id": "195",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Mission Beach \u2013 Belmont Park"
     },
     {
@@ -2919,7 +2919,7 @@
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2931,7 +2931,7 @@
    "temp_source": "NOAA NDBC SDBC1 \u2013 9410170 - San Diego, CA",
    "temp_station": "SDBC1",
    "temp_distance_km": 9.8,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2939,9 +2939,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -2952,25 +2952,25 @@
    "lat": 32.7467,
    "lon": -117.2549,
    "blurb": "a punchy beach break on both sides of the OB Pier",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Ocean Beach \u2013 O.B. Pier @ Narrangaset; Advisory: Ocean Beach \u2013 Newport Ave",
    "stations": [
     {
      "id": "192",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Ocean Beach \u2013 O.B. Pier @ Narrangaset"
     },
     {
      "id": "193",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Ocean Beach \u2013 Newport Ave"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -2982,7 +2982,7 @@
    "temp_source": "NOAA NDBC SDBC1 \u2013 9410170 - San Diego, CA",
    "temp_station": "SDBC1",
    "temp_distance_km": 8.4,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -2990,9 +2990,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -3003,25 +3003,25 @@
    "lat": 32.7193,
    "lon": -117.2569,
    "blurb": "a string of reef breaks below the Point Loma cliffs",
-   "status": "open",
-   "status_detail": null,
+   "status": "advisory",
+   "status_detail": "Advisory: Sunset Cliffs Park \u2013 Ladera Street; Advisory: Ocean Beach \u2013 Bermuda Ave",
    "stations": [
     {
      "id": "189",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Sunset Cliffs Park \u2013 Ladera Street"
     },
     {
      "id": "190",
-     "status": "open",
-     "label": "Open",
+     "status": "advisory",
+     "label": "Advisory",
      "name": "Ocean Beach \u2013 Bermuda Ave"
     }
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -3033,7 +3033,7 @@
    "temp_source": "NOAA NDBC SDBC1 \u2013 9410170 - San Diego, CA",
    "temp_station": "SDBC1",
    "temp_distance_km": 7.8,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -3041,9 +3041,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -3078,7 +3078,7 @@
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -3090,7 +3090,7 @@
    "temp_source": "NOAA NDBC SDBC1 \u2013 9410170 - San Diego, CA",
    "temp_station": "SDBC1",
    "temp_distance_km": 3.7,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -3098,9 +3098,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -3129,7 +3129,7 @@
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -3141,7 +3141,7 @@
    "temp_source": "NOAA NDBC SDBC1 \u2013 9410170 - San Diego, CA",
    "temp_station": "SDBC1",
    "temp_distance_km": 10.3,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -3149,9 +3149,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   },
@@ -3192,7 +3192,7 @@
    ],
    "source": "County of San Diego DEHQ (sdbeachinfo.com)",
    "source_url": "https://www.sdbeachinfo.com/",
-   "status_updated": "2026-10-31T23:30:25Z",
+   "status_updated": "2026-11-01T15:59:05Z",
    "grade": {
     "dry": "A+",
     "wet": "ns",
@@ -3204,7 +3204,7 @@
    "temp_source": "NOAA NDBC SDBC1 \u2013 9410170 - San Diego, CA",
    "temp_station": "SDBC1",
    "temp_distance_km": 15.5,
-   "temp_time": "2026-11-01T14:48:00Z",
+   "temp_time": "2026-11-01T17:30:00Z",
    "wear": "Boardshorts or a bikini/top",
    "wear_key": "boardshorts",
    "rain": {
@@ -3212,9 +3212,9 @@
     "inches_72h": 0.13,
     "last_rain": "2026-11-01T10:51:00Z",
     "rain_flag": true,
-    "hours_remaining": 67,
-    "coverage_from": "2026-10-29T16:51:00Z",
-    "observations": 57
+    "hours_remaining": 64,
+    "coverage_from": "2026-10-29T19:51:00Z",
+    "observations": 56
    },
    "rain_flag": true
   }
